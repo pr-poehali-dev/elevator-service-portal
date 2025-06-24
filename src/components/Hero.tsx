@@ -31,7 +31,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-smoke-900 via-coffee-800 to-smoke-900 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 bg-[url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM5QzkyQUMiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIxLjUiLz48L2c+PC9nPjwvc3ZnPg==)] opacity-20"></div>
 
@@ -40,13 +40,13 @@ const Hero = () => {
           <div className="text-white space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-white to-cream-200 bg-clip-text text-transparent">
                   Элеон Лифт
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
                 Профессиональный монтаж лифтового оборудования:
-                <span className="text-purple-300 font-semibold">
+                <span className="text-coffee-300 font-semibold">
                   {" "}
                   качество и безопасность
                 </span>{" "}
@@ -58,7 +58,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 onClick={() => scrollToSection("services")}
-                className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg"
+                className="bg-smoke-600 hover:bg-smoke-700 text-white px-8 py-3 text-lg"
               >
                 Наши услуги
                 <Icon name="ArrowRight" size={20} className="ml-2" />
@@ -67,7 +67,7 @@ const Hero = () => {
                 size="lg"
                 variant="outline"
                 onClick={() => scrollToSection("contact-form")}
-                className="border-white text-white hover:bg-white hover:text-purple-900 px-8 py-3 text-lg"
+                className="border-white text-white hover:bg-white hover:text-smoke-900 px-8 py-3 text-lg"
               >
                 Получить консультацию
               </Button>
@@ -75,15 +75,15 @@ const Hero = () => {
 
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-300">15+</div>
+                <div className="text-3xl font-bold text-coffee-300">15+</div>
                 <div className="text-sm text-gray-400">лет опыта</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-300">500+</div>
+                <div className="text-3xl font-bold text-coffee-300">500+</div>
                 <div className="text-sm text-gray-400">установок</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-300">24/7</div>
+                <div className="text-3xl font-bold text-coffee-300">24/7</div>
                 <div className="text-sm text-gray-400">поддержка</div>
               </div>
             </div>
@@ -109,14 +109,14 @@ const Hero = () => {
 
                 {/* Animated Elevator Car */}
                 <div
-                  className="absolute left-2 right-8 h-16 bg-gradient-to-r from-purple-600 to-purple-500 rounded shadow-lg transition-all duration-500 ease-out"
+                  className="absolute left-2 right-8 h-16 bg-gradient-to-r from-smoke-600 to-coffee-600 rounded shadow-lg transition-all duration-500 ease-out"
                   style={{
                     top: `${Math.max(5, Math.min(75, 15 + scrollY * 0.08))}%`,
                     transform: `translateY(-50%) ${scrollDirection === "down" ? "translateZ(0)" : "translateZ(0)"}`,
                   }}
                 >
-                  <div className="absolute inset-1 bg-purple-400 rounded opacity-30"></div>
-                  <div className="absolute top-2 left-2 right-2 h-1 bg-purple-200 rounded"></div>
+                  <div className="absolute inset-1 bg-coffee-400 rounded opacity-30"></div>
+                  <div className="absolute top-2 left-2 right-2 h-1 bg-cream-200 rounded"></div>
 
                   {/* Индикатор направления движения */}
                   <div className="absolute top-1 right-1">
@@ -143,11 +143,11 @@ const Hero = () => {
             </div>
 
             {/* Floating Elements */}
-            <div className="absolute top-12 -right-8 bg-purple-600/20 rounded-full p-4">
-              <Icon name="Shield" className="text-purple-300" size={24} />
+            <div className="absolute top-12 -right-8 bg-smoke-600/20 rounded-full p-4">
+              <Icon name="Shield" className="text-cream-300" size={24} />
             </div>
-            <div className="absolute bottom-12 -left-8 bg-orange-600/20 rounded-full p-4">
-              <Icon name="Wrench" className="text-orange-300" size={24} />
+            <div className="absolute bottom-12 -left-8 bg-coffee-600/20 rounded-full p-4">
+              <Icon name="Wrench" className="text-coffee-300" size={24} />
             </div>
           </div>
         </div>

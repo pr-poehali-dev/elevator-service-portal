@@ -101,7 +101,7 @@ const ProjectSlider = () => {
                         ))}
                       </div>
 
-                      <Button className="bg-purple-600 hover:bg-purple-700 w-fit">
+                      <Button className="bg-smoke-600 hover:bg-smoke-700 w-fit">
                         Подробнее о проекте
                         <Icon name="ArrowRight" size={16} className="ml-2" />
                       </Button>
@@ -134,7 +134,7 @@ const ProjectSlider = () => {
                 key={index}
                 onClick={() => setCurrentSlide(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  currentSlide === index ? "bg-purple-600" : "bg-gray-300"
+                  currentSlide === index ? "bg-smoke-600" : "bg-gray-300"
                 }`}
               />
             ))}

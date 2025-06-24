@@ -114,10 +114,10 @@ const Services = () => {
                 key={index}
                 className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="bg-purple-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                <div className="bg-coffee-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                   <Icon
                     name={type.icon as any}
-                    className="text-purple-600"
+                    className="text-coffee-600"
                     size={32}
                   />
                 </div>
@@ -153,10 +153,10 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {installationTypes.map((type, index) => (
               <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="bg-orange-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                <div className="bg-smoke-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                   <Icon
                     name={type.icon as any}
-                    className="text-orange-600"
+                    className="text-smoke-600"
                     size={32}
                   />
                 </div>
@@ -172,7 +172,7 @@ const Services = () => {
                     >
                       <Icon
                         name="CheckCircle"
-                        className="text-orange-500 mr-2"
+                        className="text-smoke-500 mr-2"
                         size={16}
                       />
                       {advantage}
@@ -192,10 +192,10 @@ const Services = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {additionalServices.map((service, index) => (
               <div key={index} className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                <div className="bg-cream-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                   <Icon
                     name={service.icon as any}
-                    className="text-blue-600"
+                    className="text-cream-600"
                     size={32}
                   />
                 </div>
@@ -211,7 +211,7 @@ const Services = () => {
                     >
                       <Icon
                         name="Dot"
-                        className="text-blue-500 mr-2"
+                        className="text-cream-500 mr-2"
                         size={16}
                       />
                       {item}
@@ -231,7 +231,7 @@ const Services = () => {
                 .getElementById("contact-form")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="bg-purple-600 hover:bg-purple-700 px-8 py-3 text-lg"
+            className="bg-smoke-600 hover:bg-smoke-700 px-8 py-3 text-lg"
           >
             Получить коммерческое предложение
             <Icon name="ArrowRight" size={20} className="ml-2" />

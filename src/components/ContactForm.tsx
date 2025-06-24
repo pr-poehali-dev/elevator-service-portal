@@ -34,7 +34,7 @@ const ContactForm = () => {
   return (
     <section
       id="contact-form"
-      className="py-20 bg-gradient-to-br from-purple-600 to-blue-600"
+      className="py-20 bg-gradient-to-br from-smoke-600 to-coffee-600"
     >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
@@ -42,7 +42,7 @@ const ContactForm = () => {
             <h2 className="text-4xl font-bold text-white mb-4">
               Оставить заявку
             </h2>
-            <p className="text-xl text-purple-100">
+            <p className="text-xl text-cream-100">
               Получите персональное коммерческое предложение в течение 24 часов
             </p>
           </div>
@@ -142,7 +142,7 @@ const ContactForm = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-purple-600 hover:bg-purple-700 text-lg py-3"
+                  className="w-full bg-smoke-600 hover:bg-smoke-700 text-lg py-3"
                 >
                   Отправить заявку
                   <Icon name="Send" size={20} className="ml-2" />
@@ -184,7 +184,7 @@ const ContactForm = () => {
                   <div className="flex items-center">
                     <Icon
                       name="Phone"
-                      className="text-purple-200 mr-3"
+                      className="text-cream-200 mr-3"
                       size={20}
                     />
                     <span className="text-lg font-semibold">
@@ -194,7 +194,7 @@ const ContactForm = () => {
                   <div className="flex items-center">
                     <Icon
                       name="Clock"
-                      className="text-purple-200 mr-3"
+                      className="text-cream-200 mr-3"
                       size={20}
                     />
                     <span>Круглосуточно без выходных</span>
@@ -203,7 +203,7 @@ const ContactForm = () => {
               </div>
 
               <div className="text-center">
-                <p className="text-purple-200 text-lg">
+                <p className="text-cream-200 text-lg">
                   Среднее время ответа:{" "}
                   <span className="font-bold">15 минут</span>
                 </p>

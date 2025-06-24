@@ -20,14 +20,14 @@ const Contacts = () => {
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-purple-100 p-3 rounded-lg">
-                    <Icon name="Phone" className="text-purple-600" size={24} />
+                  <div className="bg-coffee-100 p-3 rounded-lg">
+                    <Icon name="Phone" className="text-coffee-600" size={24} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">
                       Телефон
                     </h4>
-                    <p className="text-lg text-purple-600 font-semibold">
+                    <p className="text-lg text-coffee-600 font-semibold">
                       +7 (495) 123-45-67
                     </p>
                     <p className="text-sm text-gray-500">Круглосуточно</p>
@@ -35,12 +35,12 @@ const Contacts = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Icon name="Mail" className="text-blue-600" size={24} />
+                  <div className="bg-smoke-100 p-3 rounded-lg">
+                    <Icon name="Mail" className="text-smoke-600" size={24} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <p className="text-lg text-blue-600">info@eleonlift.ru</p>
+                    <p className="text-lg text-smoke-600">info@eleonlift.ru</p>
                     <p className="text-sm text-gray-500">
                       Ответим в течение часа
                     </p>
@@ -48,8 +48,8 @@ const Contacts = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-green-100 p-3 rounded-lg">
-                    <Icon name="MapPin" className="text-green-600" size={24} />
+                  <div className="bg-cream-100 p-3 rounded-lg">
+                    <Icon name="MapPin" className="text-cream-600" size={24} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">
@@ -63,8 +63,8 @@ const Contacts = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-orange-100 p-3 rounded-lg">
-                    <Icon name="Clock" className="text-orange-600" size={24} />
+                  <div className="bg-coffee-200 p-3 rounded-lg">
+                    <Icon name="Clock" className="text-coffee-700" size={24} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">
@@ -72,7 +72,7 @@ const Contacts = () => {
                     </h4>
                     <p className="text-gray-700">Пн-Пт: 9:00-18:00</p>
                     <p className="text-gray-700">Сб-Вс: 10:00-16:00</p>
-                    <p className="text-sm text-purple-600 font-semibold">
+                    <p className="text-sm text-coffee-600 font-semibold">
                       Аварийная служба: 24/7
                     </p>
                   </div>
@@ -88,25 +88,25 @@ const Contacts = () => {
               <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="bg-blue-100 p-3 rounded-lg hover:bg-blue-200 transition-colors"
+                  className="bg-smoke-100 p-3 rounded-lg hover:bg-smoke-200 transition-colors"
                 >
                   <Icon
                     name="MessageCircle"
-                    className="text-blue-600"
+                    className="text-smoke-600"
                     size={24}
                   />
                 </a>
                 <a
                   href="#"
-                  className="bg-gray-100 p-3 rounded-lg hover:bg-gray-200 transition-colors"
+                  className="bg-coffee-100 p-3 rounded-lg hover:bg-coffee-200 transition-colors"
                 >
-                  <Icon name="Phone" className="text-gray-600" size={24} />
+                  <Icon name="Phone" className="text-coffee-600" size={24} />
                 </a>
                 <a
                   href="#"
-                  className="bg-red-100 p-3 rounded-lg hover:bg-red-200 transition-colors"
+                  className="bg-cream-100 p-3 rounded-lg hover:bg-cream-200 transition-colors"
                 >
-                  <Icon name="Youtube" className="text-red-600" size={24} />
+                  <Icon name="Youtube" className="text-cream-700" size={24} />
                 </a>
               </div>
             </div>
@@ -138,7 +138,7 @@ const Contacts = () => {
             <div>
               <Icon
                 name="Truck"
-                className="text-purple-600 mx-auto mb-4"
+                className="text-smoke-600 mx-auto mb-4"
                 size={32}
               />
               <h4 className="font-semibold text-gray-900 mb-2">
@@ -151,7 +151,7 @@ const Contacts = () => {
             <div>
               <Icon
                 name="Shield"
-                className="text-green-600 mx-auto mb-4"
+                className="text-cream-600 mx-auto mb-4"
                 size={32}
               />
               <h4 className="font-semibold text-gray-900 mb-2">
@@ -164,7 +164,7 @@ const Contacts = () => {
             <div>
               <Icon
                 name="Users"
-                className="text-blue-600 mx-auto mb-4"
+                className="text-coffee-600 mx-auto mb-4"
                 size={32}
               />
               <h4 className="font-semibold text-gray-900 mb-2">
