@@ -4,12 +4,27 @@ import Icon from "@/components/ui/icon";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState<"up" | "down">("down");
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Определяем направление скролла
+      if (currentScrollY > lastScrollY) {
+        setScrollDirection("down");
+      } else if (currentScrollY < lastScrollY) {
+        setScrollDirection("up");
+      }
+
+      setScrollY(currentScrollY);
+      setLastScrollY(currentScrollY);
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -94,14 +109,26 @@ const Hero = () => {
 
                 {/* Animated Elevator Car */}
                 <div
-                  className="absolute left-2 right-8 h-16 bg-gradient-to-r from-purple-600 to-purple-500 rounded shadow-lg transition-all duration-1000 ease-in-out"
+                  className="absolute left-2 right-8 h-16 bg-gradient-to-r from-purple-600 to-purple-500 rounded shadow-lg transition-all duration-500 ease-out"
                   style={{
-                    top: `${15 + ((scrollY * 0.05) % 60)}%`,
-                    transform: "translateY(-50%)",
+                    top: `${Math.max(5, Math.min(75, 15 + scrollY * 0.08))}%`,
+                    transform: `translateY(-50%) ${scrollDirection === "down" ? "translateZ(0)" : "translateZ(0)"}`,
                   }}
                 >
                   <div className="absolute inset-1 bg-purple-400 rounded opacity-30"></div>
                   <div className="absolute top-2 left-2 right-2 h-1 bg-purple-200 rounded"></div>
+
+                  {/* Индикатор направления движения */}
+                  <div className="absolute top-1 right-1">
+                    <Icon
+                      name={
+                        scrollDirection === "down" ? "ChevronDown" : "ChevronUp"
+                      }
+                      className="text-white animate-pulse"
+                      size={12}
+                    />
+                  </div>
+
                   <Icon
                     name="Users"
                     className="absolute top-4 left-4 text-white"
